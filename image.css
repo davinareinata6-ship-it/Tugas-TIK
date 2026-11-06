@@ -1,0 +1,68 @@
+body{
+    background-color: cornflowerblue;
+    background-image: url("Starry\ background.jpg");
+}
+
+img.ukuran{
+    width: 300px;
+    height: 300px;
+}
+
+img.lengkungan{
+    border-radius: 10% 10% 10% 10%; 
+    width: 300px;
+    height: 300px;
+   
+}
+div.kelompok{
+    height: 350px;
+    width: 300px;
+    border-radius: 5%;
+    background-color: #e4e4e4;
+    text-align: center;
+    padding: 5px;
+}
+
+div.kelompok img{
+    height: 300px;
+    width: 250px;
+    border-radius: 5%;
+    border: 1px #d1e5fd;
+}
+
+div.efek{
+    height: 350px;
+    width: 300px;
+    background-color: #c1e4fa;
+    text-align: center;
+    padding: 5px;
+}
+
+div.efek img{
+    height: 300px;
+    width: 250px;
+}
+div.efek:hover{
+    height: 395px;
+    width: 290px;
+    background-color: #c1e4fa; 
+    box-shadow: 10px 10px 05px hwb(227 28% 59%);
+    font-family: "xyzabc";
+    }
+@font-face {
+        font-family: "xyzabc";
+        src: url("elegant_bloom/Elegant\ Bloom.otf");
+ }
+
+p.internal{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p.external{
+    font-family: "xyzbca";
+}
+/* format font : otf/ttf */
+@font-face {
+    font-family: "xyzbca";
+    src: url("chicken_pie/CHICKEN\ Pie.otf");
+}

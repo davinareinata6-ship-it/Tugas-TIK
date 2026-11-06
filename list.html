@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAYOUT HTML dan CSS</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="biodatastyle.css">
+    <link rel="stylesheet" href="Tugas_list.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>HEADER</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Biodata</a>
+        <a href="table.html">Table</a>
+        <a href="list.html">List</a>
+        <a href="STS_TIK_94_14/STS_TIK_94_14.html">STS</a>
+    </div>
+
+    <div class="container">
+
+        <!-- MACAM-MACAM MAKANAN -->
+        <div class="section">
+            <h3>Macam-macam Makanan</h3>
+
+            <div class="list-box food-list">
+                <ol>
+                    <li>Mie Goreng</li>
+                    <li>Nasi Goreng</li>
+                    <li>Kwetiaw</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- MACAM-MACAM MINUMAN -->
+        <div class="section">
+            <h3>Macam-macam Minuman</h3>
+
+            <div class="list-box drink-list">
+                <ul type="circle">
+                    <li>Jus Jeruk</li>
+                    <li>Air Mineral</li>
+                    <li>Teh Manis</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- MENGGABUNGKAN OL DAN UL -->
+        <div class="section">
+            <h3>Menggabungkan OL dan UL</h3>
+
+            <div class="list-box combine-list">
+                <ol>
+                    <li>Buah
+                        <ol type="a">
+                            <li>Jeruk</li>
+                            <li>Mangga</li>
+                            <li>Apel</li>
+                        </ol>
+                    </li>
+
+                    <li>Makanan
+                        <ul type="square">
+                            <li>Ayam Bakar</li>
+                            <li>Soto</li>
+                            <li>Mie Goreng</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- ICON -->
+        <div class="section">
+            <h3>Icon di HTML dan CSS</h3>
+
+            <div class="list-box icon-list">
+                <ul type="square">
+                    <li>
+                        <i class="fa-solid fa-image"></i>
+                        Icon Image
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-music"></i>
+                        Icon Music
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-heart"></i>
+                        Icon Heart
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        Icon Star
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="15" height="15"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="3"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                        SVG Icon
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

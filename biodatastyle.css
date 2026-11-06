@@ -1,0 +1,601 @@
+@font-face{
+    font-family: "doyoungimissyou";
+    src: url(chicken_pie/CHICKEN\ Pie.otf);
+}
+@font-face {
+    font-family: "jungwooimissyou";
+    src: url(elegant_bloom/Elegant\ Bloom.otf);
+}
+
+body{
+    background-image: url(Starry\ background.jpg);
+}
+
+h1{
+    background-color: lch(99.03% 18.23 111.11);
+    color: rgb(33, 0, 26);
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    border-radius: 12px;  
+    padding: 3px 8px;
+    font-family: "doyoungimissyou";
+}
+
+h2{
+    background-color: rgb(245, 220, 234);
+    color: rgb(33, 0, 26);
+    text-align: center;
+    font-family: "jungwooimissyou";
+}
+
+div.biodata{
+margin: 30px auto;
+width: 70%;
+background-color: #e6edff;
+color: hsl(201, 80%, 15%);
+padding: 30px;
+border-radius: 12px;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid hwb(223 33% 38%);
+}
+
+.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.foto.img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.parent{
+    text-align: center;
+}
+.Makanan.Kesukaan {
+    background-color:hsl(118, 76%, 92%);
+    color: rgb(33, 0, 26);
+    justify-content: center;
+    display: flex;
+    border-radius: 12px;  
+    padding: 3px 8px; 
+    text-align: center;
+}
+.Makanan.Kesukaan h1 {
+    margin: 0;
+    background-color:hsl(118, 76%, 92%);
+}
+.foodpic {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 95%;
+    margin: 30px auto;
+}
+.food {
+    flex: 1;
+    padding: 10px;
+    height: 220px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.food:nth-child(1) {
+    background-color: #dce9ff;
+}
+
+.food:nth-child(2) {
+    background-color: #f7d9e8;
+}
+
+.food:nth-child(3) {
+    background-color: #fff4c7;
+}
+
+.food:nth-child(4) {
+    background-color: #dcfadb;
+}
+
+.food:nth-child(5) {
+    background-color: hwb(193 86% 0%);
+}
+
+.food:nth-child(6) {
+    background-color: #f7d9e8;
+}
+
+.food img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.food p {
+    margin: 12px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "jungwooimissyou";
+}
+
+.food:hover {
+    transform: scale(1.1);
+}
+.yes{
+    text-align: center;
+}
+.Minuman.Kesukaan {
+    background-color:lab(90.99% 16.57 -7.56);
+    color: rgb(33, 0, 26);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 12px;  
+    padding: 3px 8px; 
+    text-align: center;
+}
+.Minuman.Kesukaan h1 {
+    margin: 0;
+    background-color:lab(90.99% 16.57 -7.56);
+}
+.drinkpic {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.drink {
+    flex: 1;
+    padding: 10px;
+    height: 220px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.drink:nth-child(1) {
+    background-color: #dce9ff;
+}
+
+.drink:nth-child(2) {
+    background-color: #f7d9e8;
+}
+
+.drink:nth-child(3) {
+    background-color: #fff4c7;
+}
+
+.drink:nth-child(4) {
+    background-color: hsl(118, 76%, 92%);
+}
+
+.drink:nth-child(5) {
+    background-color: hwb(193 86% 0%);
+}
+
+.drink:nth-child(6) {
+    background-color: #f7d9e8;
+}
+
+.drink img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.drink p {
+    margin: 12px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "jungwooimissyou";
+}
+
+.drink:hover {
+    transform: scale(1.1);
+}
+.songbird{
+    text-align: center;
+}
+.Lagu.Kesukaan {
+    background-color:#fff4c7;
+    color: rgb(33, 0, 26);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 12px;  
+    padding: 3px 8px; 
+    text-align: center;
+}
+.Lagu.Kesukaan h1 {
+    margin: 0;
+    background-color:#fff4c7;
+}
+.songpic {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    column-gap: 100px;
+    row-gap: 25px;
+    justify-content: center;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.song {
+    flex: 1;
+    text-align: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.song img {
+    width: 180px;
+    height: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.song:nth-child(1) p{
+    background-color: #f7d9e8;
+}
+
+.song:nth-child(2) p{
+    background-color: #dcfadb;
+}
+
+.song:nth-child(3) p{
+    background-color: #f7d9e8;
+}
+
+.song:nth-child(4) p{
+    background-color: #dbf7ff;
+}
+
+.song:nth-child(5) p{
+    background-color: #fff4c7;
+}
+
+.song:nth-child(6) p{
+    background-color: #dbf7ff;
+}
+.song:nth-child(7) p{
+    background-color: #f7d9e8;
+}
+.song:nth-child(8) p{
+    background-color: #fff4c7;
+}
+
+.song p {
+    margin: 1px 0 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: "jungwooimissyou";
+    background-color: white;
+    padding: 5px 12px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.song:hover {
+    transform: scale(1.05);
+}
+
+.song audio {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 40px;
+    opacity: 0.;
+}
+
+.dubaichewy {
+    position: relative;
+    background-color: hsl(118, 76%, 92%) !important;
+    overflow: hidden;
+}
+
+.dubaichewy .normal {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.dubaichewy .hover-video {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.dubaichewy:hover .normal {
+    opacity: 0;
+}
+
+.dubaichewy:hover .hover-video {
+    opacity: 1;
+}
+.chicken {
+    position: relative;
+    background-color:  #fff4c7 !important;
+    overflow: hidden;
+}
+
+.chicken .normal {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.chicken .hover-video {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.chicken:hover .normal {
+    opacity: 0;
+}
+
+.chicken:hover .hover-video {
+    opacity: 1;
+}
+.cookie {
+    position: relative;
+    background-color: rgb(219, 250, 249) !important;
+    overflow: hidden;
+}
+
+.cookie .normal {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.cookie .hover-video {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.cookie:hover .normal {
+    opacity: 0;
+}
+
+.cookie:hover .hover-video {
+    opacity: 1;
+}
+.nugget {
+    position: relative;
+    background-color: hsl(211, 76%, 92%) !important;
+    overflow: hidden;
+}
+
+.nugget .normal {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.nugget .hover-video {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.nugget:hover .normal {
+    opacity: 0;
+}
+
+.nugget:hover .hover-video {
+    opacity: 1;
+}
+.fries {
+    position: relative;
+    background-color: #f7d9e8 !important;
+    overflow: hidden;
+}
+
+.fries .normal {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.fries .hover-video {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.fries:hover .normal {
+    opacity: 0;
+}
+
+.fries:hover .hover-video {
+    opacity: 1;
+}
+.brownies {
+    position: relative;
+    background-color: hsl(211, 76%, 92%) !important;
+    overflow: hidden;
+}
+
+.brownies .normal {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.brownies .hover-video {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.brownies:hover .normal {
+    opacity: 0;
+}
+
+.brownies:hover .hover-video {
+    opacity: 1;
+}
+
+.song {
+    position: relative;
+}
+
+.song .vinyl {
+    position: absolute;
+
+    width: 180px !important;
+    height: 180px !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover;
+    border-radius: 50% !important;
+
+    top: 90px;
+    left: -95px;
+
+    opacity: 0;
+    z-index: -1;
+
+    transform: translate(170px, -50%);
+    transform-origin: center;
+}
+
+.song:hover .vinyl {
+    opacity: 1;
+    animation:
+        slideIn 0.5s ease-out forwards,
+        spin 2.5s linear 0.5s infinite;
+}
+
+.song:not(:hover) .vinyl {
+    animation: slideBack 0.5s ease-in forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(120px, -50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(20px, -50%);
+    }
+}
+
+@keyframes slideBack {
+    from {
+        opacity: 1;
+        transform: translate(20px, -50%);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(120px, -50%);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: translate(20px, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(20px, -50%) rotate(360deg);
+    }
+}
